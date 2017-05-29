@@ -1,0 +1,59 @@
+﻿1. 
+	(1) False 
+	    reason:
+		constructors ARE inherited by derived classes.
+	(2) False
+	    reason:
+		An HAS-A relationship is implemented via composition.
+	(3) False
+	    reason:
+		a STUDENT class has a HAS-A relationship with the Faculty and Course 		classes.
+	(4) True
+	(5) True
+2.
+	Student 
+      →  UndergraduateStudent 
+         → Freshman
+            → FundamentalCouses
+		  → Physics
+		  → Calculus
+		→ Experiments
+         → Sophomore 
+            → Experiments
+         → Junior 
+            → Experiments
+         → Senior
+            → Projects
+      →  GraduateStudent      
+         → DoctoralStudent
+		→ Paper
+         → MasterStudnet
+		→ AdvancedPaper
+
+## HAS-A : 
+	Student has a UndergraduateStudent and a GraduateStudent.
+	UndergraduateStudent has a Freshman, a Sophomore, a Junior, and a Senior.
+	Freshman has a FundamentalCourses.
+	FundamentalCourses has a Physics, and a Calculus.
+	Sophomore has a Experiments.
+	Junior has a AdvancedExperiments.
+	Senior has a Projects.
+	GraduateStudent has a DoctoralStudent, and a MasterStudent.
+	DoctoralStudent has a Paper.
+## IS-A : 
+	Physics is a FundamentalCourses.
+	Calculus is a FundamentalCourses.
+	FundamentalCourses is a Freshman.
+	Freshman is a UndergraduateStudent.
+	UndergraduateStudent is a Student.
+	Experiments is a Freshman, a Sophomore, a Junior.
+	Sophomore is a UndergraduateStudent.
+	Junior is a UndergraduateStudent.
+	Projects is a Senior.
+	Senior is a UndergraduateStudent.
+	Paper is a DoctoralStudent.
+	DoctoralStudent is a GraduateStudent.
+	GraduateStudent is a Student.
+	AdvancedPaper is a MasterStudent.
+	MasterStudent is a GraduateStudent.
+	
